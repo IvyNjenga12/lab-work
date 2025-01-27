@@ -1,68 +1,73 @@
 <h1>Business Registration Form</h1>
-<p>Fill in the details below:</p>
+<p>Please fill in the details below to complete your business registration:</p>
 
-<form action="submit_form" method="post">
-  <label>Text:</label><br>
-  <input type="text" name="text"><br><br>
+<form action="/submit_registration" method="post">
 
-  <label>Password:</label><br>
-  <input type="password" name="password"><br><br>
+  <p>Business Name:</p>
+  <input type="text" name="business_name" placeholder="Enter your business name" required><br><br>
 
-  <label>Submit:</label><br>
-  <input type="submit" value="Submit"><br><br>
+  <p>Contact Email:</p>
+  <input type="email" name="email" placeholder="example@business.com" required><br><br>
 
-  <label>Reset:</label><br>
+  <p>Phone Number:</p>
+  <input type="tel" name="phone" placeholder="Enter your phone number" required><br><br>
+
+  <p>Account Password:</p>
+  <input type="password" name="password" placeholder="Create a password for your account" required><br><br>
+
+  <p>Business Address:</p>
+  <input type="text" name="address" placeholder="Enter your business address" required><br><br>
+
+   <p>Whe was your Business Establishmed:</p>
+  <input type="date" name="establishment_date" required><br><br>
+
+   <p>When is the Business Start Date and Time:</p>
+  <input type="datetime-local" name="start_datetime"><br><br>
+
+   <p>What is the Business Type:</p>
+  <input type="radio" name="business_type" value="Spa" required> Small<br>
+  <input type="radio" name="business_type" value="Restaurant and Bar" required> Medium<br>
+  <input type="radio" name="business_type" value="Beauty Shop" required> Large<br><br>
+
+   <p>Number of Employees :</p>
+  <input type="number" name="employees" min="1" max="1000" required><br><br>
+
+   <p>Business Branding Color:</p>
+  <input type="color" name="branding_color"><br><br>
+
+    <p>Website URL (if applicable):</p>
+  <input type="url" name="website_url" placeholder="Enter your business website URL"><br><br>
+
+    <p>Upload Your Business Permit:</p>
+  <input type="file" name="documents"><br><br>
+
+  <p>How can we contact you:</p>
+  <input type="radio" name="contact_method" value="Email" required> Email<br>
+  <input type="radio" name="contact_method" value="Phone" required> Phone<br><br>
+
+    <p>Preferred Business Contact Time:</p>
+  <input type="time" name="contact_time"><br><br>
+
+    <p>Business Closing Week:</p>
+  <input type="week" name="operating_week"><br><br>
+
+    <p>Search for other forms:</p>
+  <input type="search" name="service_search" placeholder="Search for services"><br><br>
+
+  <p>Terms and Conditions:</p>
+  <input type="checkbox" name="terms" value="Agree" required> I agree to the terms and conditions<br><br>
+
+
+  <p>Reset Form:</p>
   <input type="reset" value="Reset"><br><br>
 
-  <label>Radio:</label><br>
-  <input type="radio" name="radio" value="option1"> Option 1<br>
-  <input type="radio" name="radio" value="option2"> Option 2<br><br>
+  <p>Submit Form:</p>
+  <input type="submit" value="Register Business"><br><br>
 
-  <label>Checkbox:</label><br>
-  <input type="checkbox" name="checkbox" value="yes"> Yes<br><br>
+  <p>Additional Notes (Optional):</p>
+  <textarea name="additional_notes" rows="4" cols="50" placeholder="Enter any additional notes here..."></textarea><br><br>
 
-  <label>Color:</label><br>
-  <input type="color" name="color"><br><br>
+  <p>Confirmation Button:</p>
+  <input type="button" value="Confirm Registration" onclick="alert('Registration Confirmed!')"><br><br>
 
-  <label>Date:</label><br>
-  <input type="date" name="date"><br><br>
-
-  <label>Datetime-local:</label><br>
-  <input type="datetime-local" name="datetime"><br><br>
-
-  <label>Email:</label><br>
-  <input type="email" name="email"><br><br>
-
-  <label>File:</label><br>
-  <input type="file" name="file"><br><br>
-
-  <label>Hidden:</label><br>
-  <input type="hidden" name="hidden" value="hiddenValue"><br><br>
-
-  <label>Image:</label><br>
-  <input type="image" src="submit.png" alt="Submit"><br><br>
-
-  <label>Month:</label><br>
-  <input type="month" name="month"><br><br>
-
-  <label>Number:</label><br>
-  <input type="number" name="number" min="1" max="10"><br><br>
-
-  <label>Range:</label><br>
-  <input type="range" name="range" min="1" max="100"><br><br>
-
-  <label>Search:</label><br>
-  <input type="search" name="search"><br><br>
-
-  <label>Tel:</label><br>
-  <input type="tel" name="tel"><br><br>
-
-  <label>Time:</label><br>
-  <input type="time" name="time"><br><br>
-
-  <label>URL:</label><br>
-  <input type="url" name="url"><br><br>
-
-  <label>Week:</label><br>
-  <input type="week" name="week"><br><br>
 </form>
