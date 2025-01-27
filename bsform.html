@@ -1,47 +1,68 @@
-<h1>Business Contact Form</h1>
-<p>Please fill out this form:</p>
+<h1>Business Registration Form</h1>
+<p>Fill in the details below:</p>
 
-<form action="/submit_form" method="POST">
-    <label>Full Name:</label><br>
-    <input type="text" name="name" placeholder="Your full name"><br><br>
+<form action="submit_form" method="post">
+  <label>Text:</label><br>
+  <input type="text" name="text"><br><br>
 
-    <label>Email Address:</label><br>
-    <input type="email" name="email" placeholder="Your email"><br><br>
+  <label>Password:</label><br>
+  <input type="password" name="password"><br><br>
 
-    <label>Phone Number:</label><br>
-    <input type="tel" name="phone" placeholder="Your phone number"><br><br>
+  <label>Submit:</label><br>
+  <input type="submit" value="Submit"><br><br>
 
-    <label>Password:</label><br>
-    <input type="password" name="password" placeholder="Create a password"><br><br>
+  <label>Reset:</label><br>
+  <input type="reset" value="Reset"><br><br>
 
-    <label>Your Age:</label><br>
-    <input type="number" name="age" min="18" max="100"><br><br>
+  <label>Radio:</label><br>
+  <input type="radio" name="radio" value="option1"> Option 1<br>
+  <input type="radio" name="radio" value="option2"> Option 2<br><br>
 
-    <label>Preferred Date:</label><br>
-    <input type="date" name="date"><br><br>
+  <label>Checkbox:</label><br>
+  <input type="checkbox" name="checkbox" value="yes"> Yes<br><br>
 
-    <label>Preferred Time:</label><br>
-    <input type="time" name="time"><br><br>
+  <label>Color:</label><br>
+  <input type="color" name="color"><br><br>
 
-    <label>Pick a Color:</label><br>
-    <input type="color" name="color"><br><br>
+  <label>Date:</label><br>
+  <input type="date" name="date"><br><br>
 
-    <label>Upload a File:</label><br>
-    <input type="file" name="file"><br><br>
+  <label>Datetime-local:</label><br>
+  <input type="datetime-local" name="datetime"><br><br>
 
-    <label>Rate Our Service:</label><br>
-    <input type="range" name="rating" min="1" max="5"><br><br>
+  <label>Email:</label><br>
+  <input type="email" name="email"><br><br>
 
-    <label>Gender:</label><br>
-    <input type="radio" name="gender" value="male"> Male<br>
-    <input type="radio" name="gender" value="female"> Female<br><br>
+  <label>File:</label><br>
+  <input type="file" name="file"><br><br>
 
-    <label>Subscribe to Newsletter:</label>
-    <input type="checkbox" name="newsletter" value="yes"><br><br>
+  <label>Hidden:</label><br>
+  <input type="hidden" name="hidden" value="hiddenValue"><br><br>
 
-    <label>Search:</label><br>
-    <input type="search" name="search" placeholder="Search here"><br><br>
+  <label>Image:</label><br>
+  <input type="image" src="submit.png" alt="Submit"><br><br>
 
-    <input type="reset" value="Reset">
-    <input type="submit" value="Submit">
+  <label>Month:</label><br>
+  <input type="month" name="month"><br><br>
+
+  <label>Number:</label><br>
+  <input type="number" name="number" min="1" max="10"><br><br>
+
+  <label>Range:</label><br>
+  <input type="range" name="range" min="1" max="100"><br><br>
+
+  <label>Search:</label><br>
+  <input type="search" name="search"><br><br>
+
+  <label>Tel:</label><br>
+  <input type="tel" name="tel"><br><br>
+
+  <label>Time:</label><br>
+  <input type="time" name="time"><br><br>
+
+  <label>URL:</label><br>
+  <input type="url" name="url"><br><br>
+
+  <label>Week:</label><br>
+  <input type="week" name="week"><br><br>
 </form>
